@@ -18,7 +18,7 @@ function PageTransitions(){
         const id = e.target.dataset.id;
         if (id){ //if id exists
             //remove active from the other button
-            sectBtns.forEach((btn) => {
+            sectBtn.forEach((btn) => {
                 btn.classList.remove('active');
             })
             e.target.classList.add('active');
