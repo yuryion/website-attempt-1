@@ -184,7 +184,7 @@ section{
                 color: var(--color-secondary)
             }
         }
-        .p{
+        p{
             margin: 1.5rem 0;
             line-height: 2rem;
         }
@@ -192,6 +192,11 @@ section{
 }
 
 /* Independent Components */
+.btn-con{
+    display: flex;
+    align-self: flex-start;
+    
+}
 .main-btn{
     border-radius: 30px;
     color: inherit;
@@ -213,6 +218,21 @@ section{
         border-radius: 50%;
         padding: 1rem;
     }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: all .4s ease-out;
+        z-index: -1;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            transform: translateX(0);
+        }
+    }
 }
-
-//https://youtu.be/xV7S8BhIeBo?t=3654
