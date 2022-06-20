@@ -157,7 +157,7 @@ section{
         }
         .image{
             border-radius: var(--br-sm-2);
-            height: 80%;
+            height: 90%;
             width: 68%;
             margin-left: 4rem;
             background-color: var(--color-black);
@@ -517,6 +517,35 @@ section{
     }
 }
 
+/*Contact Section*/
+.contact-content-con{
+    display: flex;
+    padding-top: 3.5rem;
+    .left-contact{
+        flex: 2;
+    }
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-control{
+            margin: 1.5rem 0;
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey-5);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+    }
+}
+
 
 /* Independent Components */
 .btn-con{
@@ -591,4 +620,4 @@ section{
     }
 }
 
-//https://youtu.be/xV7S8BhIeBo?t=7305
+//https://youtu.be/xV7S8BhIeBo?t=8640
